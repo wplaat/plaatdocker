@@ -1,0 +1,12 @@
+FROM linux:1.0.0
+
+RUN apt-get install -y \
+	apache2 \
+	php \
+	php-mysql \
+	php-mbstring 
+
+EXPOSE 80
+
+CMD /usr/sbin/apache2ctl -D FOREGROUND
+

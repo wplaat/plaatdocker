@@ -1,0 +1,10 @@
+version: '3'
+services:
+  apache:
+    image: "apache:1.0.0"
+    ports:
+     - "80:80"
+  mysql:
+    image: "mysql:1.0.0"
+    ports:
+     - "3306:3306"
