@@ -1,0 +1,16 @@
+# Dockering Jenkins
+
+FROM plaatos:1.0.0
+
+RUN apt-get update && apt-get install -y \
+	openjdk-8-jdk \
+	maven \
+	git
+	
+
+COPY ./jenkins_2.204.5_all.deb .
+RUN  apt install ./jenkins_2.204.5_all.deb -y
+
+EXPOSE 8080
+
+CMD /etc/init.d/jenkins start && tail -f /var/log/bootstrap.log

@@ -1,2 +1,2 @@
-call docker pull jenkinsci/blueocean
-call pause
+call docker build -t jenkins -f DockerFile.txt .
+pause

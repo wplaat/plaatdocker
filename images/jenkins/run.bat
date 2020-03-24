@@ -1,2 +1,2 @@
-call docker run -p 8080:8080 --name jenkins jenkinsci/blueocean
+call docker run -p 8080:8080 --name jenkins jenkins
 call pause
