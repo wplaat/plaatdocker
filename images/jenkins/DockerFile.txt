@@ -1,6 +1,6 @@
 # Dockering Jenkins
 
-FROM plaatos:1.0.0
+FROM linux:1.0.0
 
 RUN apt-get update && apt-get install -y \
 	openjdk-8-jdk \
